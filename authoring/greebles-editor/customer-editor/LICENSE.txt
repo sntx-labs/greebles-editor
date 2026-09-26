@@ -1,0 +1,15 @@
+greebles_001 License Summary
+
+You may:
+- Use this product in personal and commercial projects
+- Use it in client work
+- Export and embed generated outputs on websites and marketing pages
+- Modify the files for your own projects
+
+You may not:
+- Resell or redistribute this package as-is
+- Share the source package publicly or privately as a competing product
+- Claim authorship of the original package
+- Repackage the editor or source as your own template/tool for sale
+
+This license summary is intended as a practical product-use guide for purchasers.

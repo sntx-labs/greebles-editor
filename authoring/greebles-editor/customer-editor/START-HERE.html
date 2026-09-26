@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>greebles_001 Start Here</title>
+  <style>
+  :root {
+    --bg: #090907;
+    --surface: rgba(15, 15, 12, 0.88);
+    --surface-strong: rgba(21, 21, 17, 0.96);
+    --line: rgba(255, 174, 0, 0.22);
+    --line-soft: rgba(0, 204, 255, 0.16);
+    --text: #f6efc5;
+    --text-dim: #b8ad7a;
+    --accent: #ffae00;
+    --accent-dim: #00ccff;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    background:
+      radial-gradient(circle at top left, rgba(255, 174, 0, 0.08), transparent 30%),
+      radial-gradient(circle at bottom right, rgba(0, 204, 255, 0.08), transparent 28%),
+      linear-gradient(180deg, #0b0b08 0%, #070705 100%);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  body {
+    padding: 32px;
+  }
+
+  .shell {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 28px 30px;
+    border: 1px solid var(--line);
+    background:
+      linear-gradient(135deg, rgba(255, 174, 0, 0.06), transparent 45%),
+      linear-gradient(225deg, rgba(0, 204, 255, 0.05), transparent 35%),
+      var(--surface-strong);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    margin: 0 0 12px;
+    font-size: clamp(30px, 5vw, 54px);
+    line-height: 0.96;
+    letter-spacing: -0.04em;
+  }
+
+  .subtitle {
+    max-width: 680px;
+    margin: 0;
+    color: var(--text-dim);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+    margin-top: 22px;
+  }
+
+  .card {
+    padding: 18px;
+    border: 1px solid var(--line-soft);
+    background: var(--surface);
+  }
+
+  .card h2, .card h3 {
+    margin: 0 0 10px;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .card p, .card li {
+    color: var(--text-dim);
+    line-height: 1.65;
+    font-size: 14px;
+  }
+
+  .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 18px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    text-decoration: none;
+    background: rgba(255, 174, 0, 0.08);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .button.secondary {
+    border-color: var(--line-soft);
+    background: rgba(0, 204, 255, 0.06);
+  }
+
+  .section {
+    margin-top: 20px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(10, 10, 8, 0.78);
+  }
+
+  .section h2 {
+    margin: 0 0 14px;
+    font-size: 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .steps {
+    display: grid;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .steps li {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    align-items: start;
+  }
+
+  .step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--line);
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .code-block {
+    margin-top: 12px;
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.28);
+    color: #ddd5aa;
+    font: 12px/1.65 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-note {
+    margin-top: 18px;
+    color: #857b53;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+  <main class="shell">
+
+    <section class="hero">
+      <div class="eyebrow">greebles_001 / Customer Editor</div>
+      <h1>Open. Tweak. Paste.</h1>
+      <p class="subtitle">
+        This package is designed for non-technical designers and creative developers. No terminal, npm, or localhost is required.
+        Open the editor, art-direct the greebles, then copy a self-contained embed into your site.
+      </p>
+      <div class="cta-row">
+        <a class="button" href="./OPEN-ME.html">Open Editor</a>
+        <a class="button secondary" href="./README.html">Read Quickstart</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Best For</h3>
+          <p>Hero sections, moody page backdrops, sci-fi interface surfaces, and landing page texture systems.</p>
+        </article>
+        <article class="card">
+          <h3>Main Export</h3>
+          <p><strong>Copy Iframe Embed</strong> gives you a self-contained <code>srcdoc</code> snippet that does not depend on any hosted assets.</p>
+        </article>
+        <article class="card">
+          <h3>Backup Path</h3>
+          <p>If your site builder rejects large inline embeds, use <strong>Download Standalone HTML</strong> and host or reference that file instead.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Fastest Workflow</h2>
+      <ol class="steps">
+        <li><span class="step-num">1</span><div>Open <code>OPEN-ME.html</code> and adjust colors, density, glow, and motion.</div></li>
+        <li><span class="step-num">2</span><div>Set the embed height that matches the section you are designing.</div></li>
+        <li><span class="step-num">3</span><div>Use <strong>Copy Iframe Embed</strong> to paste directly into Webflow, Framer, or a custom site.</div></li>
+        <li><span class="step-num">4</span><div>If the builder is strict about code size, use <strong>Download Standalone HTML</strong> as the fallback deliverable.</div></li>
+      </ol>
+    </section>
+
+    <p class="footer-note">Included in this package: editor, quickstart, examples, license, and export workflow notes.</p>
+
+  </main>
+</body>
+</html>

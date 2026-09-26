@@ -1,0 +1,6 @@
+Export folder
+
+Use this folder to store:
+- downloaded standalone HTML exports
+- saved config JSON files
+- approved client variations

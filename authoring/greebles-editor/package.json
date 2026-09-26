@@ -1,0 +1,14 @@
+{
+  "name": "ui-elements",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview",
+    "build:static-editor": "node scripts/build-static-editor.mjs"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

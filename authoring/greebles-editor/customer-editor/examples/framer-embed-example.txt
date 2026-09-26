@@ -1,0 +1,11 @@
+Framer Embed Example
+
+1. Insert an Embed component.
+2. Paste the code copied from "Copy Iframe Embed".
+3. Set the frame height to match the exported embed height.
+
+Suggested wrapper:
+
+<div style="width:100%;min-height:720px;overflow:hidden;">
+  PASTE_IFRAME_EMBED_HERE
+</div>

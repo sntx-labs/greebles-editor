@@ -1,0 +1,11 @@
+Webflow Embed Example
+
+1. Add an Embed block to the section where you want the background.
+2. Paste the code copied from "Copy Iframe Embed".
+3. Make sure the parent section has an explicit height or min-height.
+
+Suggested wrapper:
+
+<section style="position:relative;min-height:720px;overflow:hidden;">
+  PASTE_IFRAME_EMBED_HERE
+</section>
